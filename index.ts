@@ -1,2 +1,2 @@
-console.log("Hello Git");
+console.log("Hello");
 console.log("I am learning TypeScript");
