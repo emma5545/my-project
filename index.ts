@@ -35,3 +35,20 @@ class Student extends Person {
 const student1 = new Student("Bob", 20, 12345);
 student1.greet();
 student1.study();
+
+class Teacher extends Person {
+    teacherId: number;
+
+    constructor(name: string, age: number, teacherId: number) {
+        super(name, age);
+        this.teacherId = teacherId;
+    }
+
+    teach() {
+        console.log(`${this.name} is teaching.`);
+    }
+}
+
+const teacher1 = new Teacher("John", 35, 67890);
+teacher1.greet();
+teacher1.teach();   
